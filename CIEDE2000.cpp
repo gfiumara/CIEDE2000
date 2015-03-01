@@ -73,7 +73,7 @@ CIEDE2000::CIEDE2000(
 	double hPrime2;
 	if (lab2.b == 0 && a2Prime == 0)
 		hPrime2 = 0.0;
-	else
+	else {
 		hPrime2 = atan2(lab2.b, a2Prime);
 		/* 
 		 * This must be converted to a hue angle in degrees between 0 
@@ -81,6 +81,7 @@ CIEDE2000::CIEDE2000(
 		 */
 		if (hPrime2 < 0)
 			hPrime2 += deg360InRad;
+	}
 	
 	/*
 	 * Step 2
