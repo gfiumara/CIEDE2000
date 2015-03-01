@@ -1,0 +1,7 @@
+*.dll
+*.so
+*.dylib
+*.o
+*.dSYM
+testCIEDE2000
+
