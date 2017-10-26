@@ -4,8 +4,7 @@ CIE Delta E 2000 (CIEDE2000)
 A C++ library containing a function to determine how similar two colors are.
 The code here is original, based on the psuedocode written in the paper
 [The CIEDE2000 Color-Difference Formula: Implementation Notes, Supplementary
-Test Data, and Mathematical Observations](http://www.ece.rochester.edu/
-~gsharma/ciede2000/), by Gaurav Sharma, Wencheng Wu, and Edul N. Dalal. While
+Test Data, and Mathematical Observations](http://www.ece.rochester.edu/~gsharma/ciede2000/), by Gaurav Sharma, Wencheng Wu, and Edul N. Dalal. While
 this is written in C++ so that I could place it in a namespace, there's nothing
 C++-specific about the implementation, and so it would be trivial to convert
 to C if required. The conversion is left as an exercise to the reader.
@@ -21,8 +20,7 @@ code fragements with lines from the paper for tracability. There are ways to
 speed up and optimize this algorithm, which have not been attempted.
 
 A test program (`testCIEDE2000`) is built by default to run the
-[tests](http://www.ece.rochester.edu/~gsharma/ciede2000/dataNprograms/
-CIEDE2000.xls) perscribed by the algorithm authors. Tested on OS X 10.10.2,
+[tests](http://www.ece.rochester.edu/~gsharma/ciede2000/dataNprograms/CIEDE2000.xls) perscribed by the algorithm authors. Tested on OS X 10.10.2,
 and Ubuntu 14.04 LTS. Should work on Cygwin/MINGW, though there will likely
 need to be edits to the [Makefile](Makefile).
 
